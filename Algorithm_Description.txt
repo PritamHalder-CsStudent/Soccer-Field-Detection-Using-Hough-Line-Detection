@@ -1,0 +1,39 @@
+#complete algorithm and procedures of that project
+
+1.	Preprocess the image: 
+Load and preprocess the soccer field image, including resizing, grayscale conversion, or any other necessary enhancements.
+Using Image segmentin remove non playing part of the image of soccer field.
+
+2.	Detect lines using the Hough transform: 
+Apply the Hough transform algorithm to detect lines in the image, as described previously.
+
+3.	Filter and refine lines:
+Filter out irrelevant lines based on criteria such as angle, length, or position relative to the image, as mentioned earlier.
+
+4.	Identify field boundary lines:
+Group the lines that represent the soccer field boundaries together to form a quadrilateral shape.
+
+5.	Find intersection points: 
+Determine the intersection points between the boundary lines by solving the mathematical equations of intersecting lines.
+
+6.	Validate and refine the points: 
+Validate the intersection points to ensure they correspond to the corners of the soccer field. 
+Perform checks such as the ratio of the sides of the quadrilateral or the angles between the lines to verify the correctness of the points. 
+Refine the points if necessary by adjusting filtering criteria or applying additional geometric analysis.
+
+7.	Apply homography: 
+Use the detected intersection points to compute a homography transformation. 
+The homography matrix maps the points from the distorted soccer field image to the corresponding points in a flat, 
+top-down view of the field. This transformation helps rectify the perspective distortion and provides a bird's-eye view of the field.
+
+
+8.	Transform the image: 
+Apply the computed homography matrix to warp the image and obtain the rectified output. 
+This transformation aligns the soccer field and removes the perspective distortion, giving you a view similar to looking down at the field from above.
+
+
+9.	Visualize the rectified output: 
+Display the rectified image, showcasing the soccer field in a top-down view without the perspective distortion. 
+Overlay the detected field boundaries and intersection points on the rectified image to verify the accuracy of the detection.
+
+10. End..

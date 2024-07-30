@@ -1,0 +1,8 @@
+# need modules to know 
+
+1. [Opencv] (https://opencv.org/)
+2. [numpy] (https://numpy.org/)
+3. [pandas] (https://pandas.pydata.org/)
+4. [matplotlib] (https://matplotlib.org/)
+4. [Image Processing] (https://www.mathworks.com/products/image-processing.html)
+5. [Hough Line Transfrom] (https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html)
